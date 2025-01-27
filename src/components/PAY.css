@@ -1,0 +1,203 @@
+/* التصميم العام للصفحة */
+.payment-page {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    direction: ltr;
+  }
+  
+  /* عنوان الصفحة */
+  .payment-page h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  
+  /* تفاصيل الباقة */
+  .package-details {
+    background: linear-gradient(135deg, #1a73e8, #4a90e2);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+  }
+  
+  .package-details h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .package-details p {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* النموذج */
+  .payment-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .payment-page label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .payment-page input {
+    padding: 15px;
+    border: 1px solid #e0e3e7;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  .payment-page input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.3);
+    background-color: #ffffff;
+  }
+  
+  /* حقل تاريخ الانتهاء */
+  .expiry-date .expiry-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .expiry-date input {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .expiry-date span {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* زر الدفع */
+  .payment-page button {
+    padding: 16px;
+    background: linear-gradient(135deg, #1a73e8, #4a90e2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .payment-page button:hover {
+    background: linear-gradient(135deg, #1557b0, #1a73e8);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+  }
+  
+  .payment-page button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  /* رسائل الخطأ */
+  .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* تأكيد الدفع */
+  .confirmation {
+    text-align: center;
+  }
+  
+  .confirmation h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .confirmation button {
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .confirmation button:first-of-type {
+    background: linear-gradient(135deg, #1a73e8, #4a90e2);
+    color: white;
+  }
+  
+  .confirmation button:first-of-type:hover {
+    background: linear-gradient(135deg, #1557b0, #1a73e8);
+    transform: translateY(-2px);
+  }
+  
+  .confirmation button:last-of-type {
+    background: #f8f9fa;
+    color: #333;
+    border: 1px solid #e0e3e7;
+  }
+  
+  .confirmation button:last-of-type:hover {
+    background: #e0e3e7;
+    transform: translateY(-2px);
+  }
+  
+  /* تصميم متجاوب */
+  @media (max-width: 600px) {
+    .payment-page {
+      margin: 20px;
+      padding: 25px;
+    }
+  
+    .payment-page h1 {
+      font-size: 28px;
+    }
+  
+    .package-details h2 {
+      font-size: 22px;
+    }
+  
+    .package-details p {
+      font-size: 18px;
+    }
+  
+    .payment-page input {
+      font-size: 14px;
+    }
+  
+    .confirmation p {
+      font-size: 16px;
+    }
+  
+    .confirmation button {
+      font-size: 14px;
+    }
+  }

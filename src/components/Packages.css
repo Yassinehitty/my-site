@@ -1,0 +1,176 @@
+/* Packages.css */
+.packages {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.package-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.package-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.package-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.package-items li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.package-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.package-button:hover {
+  background-color: #0056b3;
+}
+
+.cart-icon {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .package-name {
+    font-size: 1.3rem;
+  }
+
+  .package-items li {
+    font-size: 0.9rem;
+  }
+
+  .package-price {
+    font-size: 1.3rem;
+  }
+}
+.package-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-button {
+  transition: background-color 0.3s ease;
+}
+
+.package-button:hover {
+  background-color: #0056b3;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  animation: fadeIn 1s ease-out;
+}
+
+.package-card {
+  animation: fadeIn 0.5s ease-out;
+}
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .package-name {
+    font-size: 1.3rem;
+  }
+
+  .package-items li {
+    font-size: 0.9rem;
+  }
+
+  .package-price {
+    font-size: 1.3rem;
+  }
+}

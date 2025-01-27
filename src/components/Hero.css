@@ -1,0 +1,103 @@
+/* التصميم العام */
+.hero {
+  height: 100vh; /* ارتفاع الشاشة بالكامل */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* طبقة شفافة فوق الصورة */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease-out; 
+  color: #7e9aac;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-out; /* تأثير ظهور */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1.5s ease-out; /* تأثير ظهور */
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: scale(1.05);
+}
+
+/* تأثيرات الظهور */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
