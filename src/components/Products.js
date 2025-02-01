@@ -23,10 +23,9 @@ const Products = ({ addToCart }) => {
   ];
 
   const [quantities, setQuantities] = useState({});
-  const [visibleProducts, setVisibleProducts] = useState(8); // عرض 8 منتجات في البداية
-
+  const [visibleProducts, setVisibleProducts] = useState(8); 
   const handleQuantityChange = (productId, quantity) => {
-    if (quantity < 1) quantity = 1; // التأكد من أن الكمية لا تقل عن 1
+    if (quantity < 1) quantity = 1; 
     setQuantities({
       ...quantities,
       [productId]: quantity,
@@ -34,12 +33,12 @@ const Products = ({ addToCart }) => {
   };
 
   const handleAddToCart = (product) => {
-    const quantity = quantities[product.id] || 1; // إذا لم يتم تحديد الكمية، نستخدم 1 كقيمة افتراضية
+    const quantity = quantities[product.id] || 1; 
     addToCart({ ...product, quantity });
   };
 
   const loadMoreProducts = () => {
-    setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 8); // زيادة عدد المنتجات المعروضة بمقدار 8
+    setVisibleProducts((prevVisibleProducts) => prevVisibleProducts + 8);
   };
 
   return (
