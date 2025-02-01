@@ -1,8 +1,8 @@
-/* التصميم العام */
+
 .contact {
   padding: 80px 20px;
-  background-color: #f9f9f9; /* لون خلفية هادئ */
-  font-family: 'Inter', sans-serif; /* خط حديث */
+  background-color: #f9f9f9; 
+  font-family: 'Inter', sans-serif; 
 }
 
 .contact h2 {
@@ -67,7 +67,6 @@
   line-height: 1.8;
 }
 
-/* تصميم متجاوب */
 @media (max-width: 768px) {
   .contact h2 {
     font-size: 2.5rem;
