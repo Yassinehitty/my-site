@@ -1,4 +1,4 @@
-/* التصميم العام للصفحة */
+
 .payment-page {
     max-width: 500px;
     margin: 50px auto;
@@ -10,7 +10,7 @@
     direction: ltr;
   }
   
-  /* عنوان الصفحة */
+  
   .payment-page h1 {
     text-align: center;
     color: #1a73e8;
@@ -20,7 +20,7 @@
     letter-spacing: -1px;
   }
   
-  /* تفاصيل الباقة */
+
   .package-details {
     background: linear-gradient(135deg, #1a73e8, #4a90e2);
     padding: 25px;
@@ -43,7 +43,7 @@
     font-weight: 500;
   }
   
-  /* النموذج */
+ 
   .payment-page form {
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@
     background-color: #ffffff;
   }
   
-  /* حقل تاريخ الانتهاء */
+  
   .expiry-date .expiry-inputs {
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@
     color: #333;
   }
   
-  /* زر الدفع */
+  
   .payment-page button {
     padding: 16px;
     background: linear-gradient(135deg, #1a73e8, #4a90e2);
@@ -116,14 +116,14 @@
     box-shadow: none;
   }
   
-  /* رسائل الخطأ */
+  
   .error {
     color: #ff4d4d;
     font-size: 14px;
     margin-top: 5px;
   }
   
-  /* تأكيد الدفع */
+  
   .confirmation {
     text-align: center;
   }
@@ -169,8 +169,7 @@
     background: #e0e3e7;
     transform: translateY(-2px);
   }
-  
-  /* تصميم متجاوب */
+
   @media (max-width: 600px) {
     .payment-page {
       margin: 20px;
