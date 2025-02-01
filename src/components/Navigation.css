@@ -1,11 +1,11 @@
-/* Navigation.css */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #ffffff; /* خلفية بيضاء */
-  color: #333333; /* لون النص داكن */
+  background: #ffffff; 
+  color: #333333; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -46,10 +46,9 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: #4a6cf7; /* لون التحويم */
+  color: #4a6cf7; 
 }
 
-/* تأثير خط تحت العنصر عند التحويم */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -65,7 +64,7 @@ nav {
   width: 100%;
 }
 
-/* تصميم أيقونة القائمة المتنقلة */
+
 .menu-icon {
   display: none;
   font-size: 1.5rem;
@@ -77,7 +76,7 @@ nav {
   transform: scale(1.1);
 }
 
-/* تصميم متجاوب */
+
 @media (max-width: 768px) {
   nav {
     padding: 15px 20px;
