@@ -14,7 +14,7 @@ const PaymentPage = () => {
   const [errors, setErrors] = useState({});
   const [showConfirmation, setShowConfirmation] = useState(false);
 
-  // تحقق من صحة البيانات
+
   const validateForm = () => {
     const newErrors = {};
 
