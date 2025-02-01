@@ -1,8 +1,8 @@
-/* التصميم العام */
+
 .products {
   padding: 80px 20px;
-  background-color: #f9f9f9; /* لون خلفية هادئ */
-  font-family: 'Inter', sans-serif; /* خط حديث */
+  background-color: #f9f9f9; 
+  font-family: 'Inter', sans-serif; 
 }
 
 .products h2 {
@@ -158,7 +158,7 @@
   transform: scale(1.05);
 }
 
-/* تصميم متجاوب */
+
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -176,7 +176,7 @@
 
 .voir-plus-container {
   display: flex;
-  justify-content: center; /* توسيط الزر أفقيًا */
+  justify-content: center; 
   margin-top: 30px;
 }
 
@@ -185,22 +185,22 @@
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* تدرج لوني */
+  background: linear-gradient(135deg, #6e8efb, #4a6cf7); 
   border: none;
-  border-radius: 50px; /* زوايا دائرية */
+  border-radius: 50px; 
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   outline: none;
 }
 
 .voir-plus-button:hover {
-  background: linear-gradient(135deg, #4a6cf7, #6e8efb); /* تغيير التدرج عند التمرير */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* زيادة الظل */
-  transform: translateY(-2px); /* حركة خفيفة للأعلى */
+  background: linear-gradient(135deg, #4a6cf7, #6e8efb); 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
 }
 
 .voir-plus-button:active {
-  transform: translateY(0); /* إعادة الزر إلى مكانه عند النقر */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* تقليل الظل */
+  transform: translateY(0); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
