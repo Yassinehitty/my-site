@@ -21,7 +21,6 @@ const Navbar = ({ cart, clearCart }) => {
     <nav>
       <div className="logo">Moga Fish</div>
 
-      {/* قائمة التنقل */}
       <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <li>
           <a href="#home" onClick={toggleMenu}>
@@ -50,18 +49,18 @@ const Navbar = ({ cart, clearCart }) => {
         </li>
       </ul>
 
-      {/* أيقونة السلة */}
+      
       <div className="cart-icon" onClick={openCart}>
         <FaShoppingCart />
         {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
       </div>
 
-      {/* أيقونة القائمة المتنقلة (للأجهزة الصغيرة) */}
+     
       <div className="menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
-      {/* نافذة السلة */}
+     
       <CartModal
         cart={cart}
         isOpen={isCartOpen}
