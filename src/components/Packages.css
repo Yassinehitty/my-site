@@ -1,4 +1,4 @@
-/* Packages.css */
+
 .packages {
   padding: 80px 20px;
   background-color: #f9f9f9;
@@ -101,7 +101,7 @@
   margin-right: 10px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
