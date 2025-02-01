@@ -1,8 +1,8 @@
-/* التصميم العام */
+
 .about {
   padding: 80px 20px;
-  background-color: #f9f9f9; /* لون خلفية هادئ */
-  font-family: 'Inter', sans-serif; /* خط حديث */
+  background-color: #f9f9f9; 
+  font-family: 'Inter', sans-serif; 
 }
 
 .about h2 {
@@ -52,7 +52,7 @@
 }
 
 .about-image img:hover {
-  transform: scale(1.05); /* تكبير الصورة عند التحويم */
+  transform: scale(1.05); 
 }
 
 .about-text {
@@ -74,7 +74,7 @@
   margin-bottom: 20px;
 }
 
-/* تصميم متجاوب */
+
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
