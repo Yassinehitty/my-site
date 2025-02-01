@@ -38,7 +38,7 @@ const App = () => {
       <Router>
         <Navigation cart={cart} clearCart={clearCart} />
         <Routes>
-          {/* الصفحة الرئيسية */}
+          
           <Route
             path="/"
             element={
@@ -52,7 +52,7 @@ const App = () => {
             }
           />
 
-          {/* صفحة الدفع */}
+          
           <Route path="/payment" element={<PaymentPage />} />
 
           
